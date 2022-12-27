@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+body, #root {
+  height: 968px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main {
+  border: 1px solid red;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main > div:nth-child(1) {
+  border: 1px solid red;
+  width: 30%;
+  height: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.main > div:nth-child(1) > div:nth-child(1) {
+  align-self: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main > div:nth-child(1) > div:nth-child(2) {
+  align-self: center;
+  border: 1px solid red;
+  width: 60%;
 }
+.main > div:nth-child(1) > div:nth-child(2) > input {
+  width: 80%;
+  padding: 5px;
+}
+.main > div:nth-child(1) > div:nth-child(2) > button {
+  width: 20%;
+  height: 100%;
+}
+.main > div:nth-child(1) > div:nth-child(3) {
+  overflow: scroll;
+  border-top: 1px solid red;
+}
+.main > div:nth-child(1) > div:nth-child(3) > ul > li {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+.main > div:nth-child(1) > div:nth-child(3) > ul > li > ul {
+  width: 80%;
+  padding: 0px;
+}
+.main > div:nth-child(1) > div:nth-child(3) > ul > li > ul > li {
+  border: 1px solid black;
+  padding: 5px;
+  overflow: hidden;
+}/*# sourceMappingURL=App.css.map */
